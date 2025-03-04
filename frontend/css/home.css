@@ -1,0 +1,38 @@
+@keyframes slide {
+    0% {
+      background-position: right center;
+    }
+    100% {
+      background-position: left center;
+    }
+  }
+  
+  .slide-animation {
+    animation: slide 3s linear infinite;
+  }
+  
+  .gradient-border {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;
+    border-image-source: linear-gradient(to right, #FFD445, #3652AD);
+  }
+
+  
+  .button-custom {
+    background-color: #FFD445;
+    color: #3652AD;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(54, 82, 173, 0.5);
+    border: 2px solid transparent; /* Add transparent border */
+    box-sizing: border-box; /* Include border in element's total width and height */
+    transition: all 0.3s ease;
+  }
+  
+  .button-custom:hover {
+    background-color: white;
+    color: #3652AD;
+    border: 2px solid #3652AD;
+    transform: scale(0.95);
+  }
