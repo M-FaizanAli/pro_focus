@@ -10,11 +10,23 @@
   .slide-animation {
     animation: slide 3s linear infinite;
   }
+
+  @keyframes upAndDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .up-and-down {
+    animation: upAndDown 3s ease-in-out infinite;
+  }
   
   .gradient-border {
     border: 10px solid;
     border-image-slice: 1;
-    border-width: 10px;
     border-image-source: linear-gradient(to right, #FFD445, #3652AD);
   }
 
@@ -23,7 +35,7 @@
     background-color: #FFD445;
     color: #3652AD;
     padding: 0.5rem 1rem;
-    border-radius: 8px;
+    border-radius: 50px;
     box-shadow: 2px 2px 5px rgba(54, 82, 173, 0.5);
     border: 2px solid transparent; /* Add transparent border */
     box-sizing: border-box; /* Include border in element's total width and height */
