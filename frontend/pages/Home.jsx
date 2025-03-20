@@ -79,7 +79,7 @@ const Home = () => {
             animationDuration={1.5}
             pauseBetweenAnimations={1}
           />
-          <h1 className=" md:leading-13 leading-8 w-full font-bold text-2xl md:text-4xl text-pretty">
+          <h1 className=" md:leading-13 leading-10 w-full font-bold text-3xl md:text-4xl text-pretty">
             Elevate Your Visual Experience with Stunning{" "}
             <span className="rounded-md px-[5px] bg-[#3652AD] text-[#FFD445]">
               HDR Editing
@@ -124,7 +124,7 @@ const Home = () => {
             <h5 className="mb-2 text-[#3652AD] text-4xl font-medium leading-tight">
               What We Do
             </h5>
-            <p className="mb-4 text-lg">
+            <p className="mb-4 text-lg text-black">
               Welcome to Pro Focus Editing, where passion meets expertise in HDR
               editing and video services! Founded in July 2024, our dynamic team
               of 10 dedicated professionals in Pakistan has quickly become a
@@ -163,7 +163,7 @@ const Home = () => {
           <h2 className="text-4xl text-[#3652AD]">Services Offered</h2>
           <div className="h-[5px] w-[140px] bg-gradient-to-r from-[#FFD445] to-[#3652AD]"></div>
         </div>
-        <div className="mt-[15px] md:px-[80px] text-xl md:leading-10 w-full flex flex-col md:justify-between md:flex-row gap-4">
+        <div className="mt-[15px] md:px-[80px] text-lg md:leading-10 w-full flex flex-col md:justify-between md:flex-row gap-4">
           <div className="">
             <li> Remove Objects </li>
             <li> Remove and add Swimming pools </li>
@@ -272,6 +272,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <button className="md:w-[150px] button-custom font-sans text-lg px-8">
+            View More
+        </button> 
       </section>
       <Footer />
     </div>
